@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul, li, a {
+	list-style: none;
+	text-decoration: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap{
+	width: 1024px;
+	margin: 0 auto;
+	background-color:#fafafa;
+}
+.title-blue h2{
+	text-align: center;
+	color: blue;
+	font-size: 30px;
+	margin: 90px auto;
+}
+.title-pink h2{
+	text-align: center;
+	color: pink;
+	font-size: 30px;
+	margin: 90px auto;
+}
+/* reset end */
+
+/* header start */
+.header{
+	background-image: url(HTML_sketch_export-master/assets/img-headerShape.png);
+	background-repeat: no-repeat;
+	display: flex;
+	margin-bottom: 40px;
+}
+.detail{
+	display: flex;
+	flex-direction: column;
+	margin-left: 130px;
+	margin-top: 130px;
+	text-align: center;
+}
+.detail h1{
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.detail h1, .detail p{
+	margin-bottom: 15px;
+}
+.contect{
+	margin: 140px 0 0 180px;
+}
+.contect li{
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	/* 我想請問這裡除了flex讓文字垂直至中外還有沒有別的方法 */
+}
+.contect li a{
+	margin-left: 10px;
+	text-decoration: none;
+	color: #fff;
+}
+/* header end */
+
+/* skill start */
+.skill{
+	margin: 40px auto;
+	margin-top: 20px;
+	display: flex;
+	padding: 50px;
+	justify-content: center;
+}
+.skill h2 {
+	text-align: center;
+	font-size: 20px;
+	margin: 20px auto;
+}
+.skill ul{
+	margin-left: 20px;
+}
+.skill li{
+	list-style: inside;
+	margin-bottom: 5px;
+	
+}
+.skill li a{
+	color: gray;
+	font-size: 10px;
+}
+.sk-item-first{
+	width: 30%;
+	padding: 2% ;
+	border-radius: 7px;
+	margin-right: 2%;
+	background-color: #fff;
+	border-bottom: 8px solid #f58d23;	
+
+}
+.sk-item-first img, .sk-item-second img, .sk-item-third img{
+	display: block;
+	margin: 0 auto;
+	padding: 5px;
+}
+.sk-item-second{
+	width: 30%;
+	padding: 2%;
+	border-radius: 7px;
+	background-color: #fff;
+	border-bottom: 8px solid #539e43	
+}
+.sk-item-third{
+	width: 30%;
+	padding: 2%;
+	border-radius: 7px;
+	margin-left: 2%;
+	background-color: #fff;
+	border-bottom: 8px solid #6762a6;	
+
+}
+/* skill end */
+
+/* ex start */
+.ex{
+	width: 800px;
+	margin: 50px auto;
+  text-align: center;
+}
+.ex::before{
+	content: url(HTML_sketch_export-master/assets/dot-start.png);
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 4px;
+}
+.ex::after{
+	content: "";
+	width: 40px;
+	height: 3px;
+	text-align: center;
+	background-color: #888;
+	display: block;
+	margin: 0 auto;
+}
+.ex ul{
+	position: relative;
+	padding: 10px;
+}
+.ex ul::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	background-color: #888;
+	height: 100%;
+	top: 0;
+  }
+.article{
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	margin-bottom: 10px;
+}
+.article .article-item{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #fb56bf;
+  text-align: left;
+  border-radius: 5px;
+  padding: 15px;
+  width: 190px;
+  position: relative;
+  margin: 15px 120px 15px 0;
+}
+.article .article-item-left{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #fb56bf;
+  text-align: left;
+  border-radius: 5px;
+  padding: 15px;
+  width: 190px;
+  position: relative;
+  margin: 15px 440px 15px 0;
+}
+.article .icon{
+	position: absolute;
+	top: 15px;
+	left: 379px;
+}
+/* ex start */
+
+/* work start */
+.work{
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+.work-item {
+	width: 28%;
+	margin: 0 auto;
+	text-align: left;
+}
+.work-item:hover{
+	background: #FFFFFF;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.40);
+	border-radius: 4px;
+}
+.work-item .img-pink{
+	text-align: right;
+	background-color: pink;
+}
+.work-item .img-black{
+	background-color: #424242;
+	text-align: center;
+}
+.work-item .img-blue{
+	background-color: #8AD7FA;
+	text-align: center;
+}
+.work-item .img-pink img{
+	height: 120px;
+	padding: 30px 0 0 30px;
+}
+.work-item .img-black img, .work-item .img-blue img{
+	height: 80px;
+	padding: 35px;
+}
+.work-item h2{
+	padding: 5px;
+	font-weight: bolder;
+}
+.work-item p{
+	padding: 5px;
+	font-style: italic;
+}
+
+/* work end */
+
+/* about start */
+.about{
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+}
+.about img{
+	background-color: red;
+	width: 260px;
+	height: 335px;
+	margin-left: 120px;
+}
+.about p{
+	width: 440px;
+	padding: 20px;
+	line-height: 30px;
+	margin-left: 30px;
+}
+/* about end */
+/* footer start */
+.footer{
+	padding: 35px 0;
+	margin-top: 60px;
+	text-align: center;
+	background-image: url(HTML_sketch_export-master/assets/img-Looper-bg.png);
+}
+.footer span{
+	
+}
+/* footer end */
+
